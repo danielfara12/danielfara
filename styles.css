@@ -63,14 +63,3 @@ footer {
     width: 100%;
 }
 
-/* Responzivní design */
- max-width  {
-    body {
-        font-size: 14px;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-}
