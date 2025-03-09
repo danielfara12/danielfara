@@ -1,58 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    color: #fff;
+/* Základní stylování */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Tělo webu */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Navigace */
 header {
-    background-color: #222;
+    background-color: #005f73;
     color: white;
-    padding: 20px;
+    padding: 15px 0;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
-    text-align: center;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
 }
 
+/* Hlavní obsah */
 main {
-    padding: 20px;
-    text-align: center;
+    padding: 30px;
 }
 
-img {
-    width: 80%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
+h1, h2, h3 {
+    color: #003d5b;
+}
+
+/* Obrázky */
+.holub-img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
 }
 
+/* Patka */
 footer {
-    background-color: #222;
+    background-color: #003d5b;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    font-size: 14px;
+}
+
+/* Responzivní design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
